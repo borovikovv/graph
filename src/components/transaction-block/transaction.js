@@ -46,9 +46,9 @@ const TransactionBlock = ({data = {}}) => {
 class TransactionBlockContainer extends Component {
     
     // in this place I will loading data with my service
-    componentDidMount() {
-        this.props.fetchTransactionDetails();
-    }
+    // componentDidMount() {
+    //     this.props.fetchTransactionDetails();
+    // }
 
     render() {
         const { loading, transactionData } = this.props;

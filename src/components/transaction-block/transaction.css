@@ -18,10 +18,15 @@
 }
 .trans-body {
     display: grid;
-    /* flex-direction: column; */
+    flex-direction: column;
 }
 
 .trans-map {
     width: 300px;
     height: 300px;
+}
+
+.trans-table-header {
+    display: flex;
+    justify-content: space-around;
 }
