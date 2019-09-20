@@ -1,0 +1,40 @@
+.user-project {
+    display: inline-block;
+    margin-left: 30px;
+    flex-direction: column;
+    width: 29%;
+    height: 400px;
+    background-color: #fff;
+    margin-top: 35px;
+    color: rgb(103, 108, 124);
+    box-shadow: 0px -5px 5px -5px rgba(0,0,0,0.5);
+}
+
+.table-value {
+    color: rgb(26, 179, 148);
+}
+.user-project-table-header {
+    font-size: 16px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    border-bottom: 3px solid rgb(243, 243, 243);
+}
+
+.user-project-body {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgb(243, 243, 243);
+    margin-right: 40px;
+}
+
+.user-project-head {
+    display: flex;
+    font-weight: 700;
+    padding-left: 10px;
+    padding-bottom: 5px ;
+    justify-content: space-around;
+    border-bottom: 2px solid rgb(243, 243, 243);
+}

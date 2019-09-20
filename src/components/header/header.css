@@ -1,0 +1,54 @@
+
+.header {
+    display: inline-block;
+    width: 300px;
+    height: 150px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    margin-left: 14px;
+    margin-top: 15px;
+    color: rgb(103, 108, 124);
+    background-color: #fff;
+    box-shadow: 0px -5px 5px -5px rgba(0,0,0,0.5);
+}
+.header-type {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 3px solid rgb(243, 243, 243);
+    margin-bottom: 15px;
+}
+
+.header-type > .header-type-h {
+    margin-left: 15px;
+    font-weight: 500;
+}
+.header-type > .header-type-marks {
+    height: 20px;
+    color: #fff;
+    margin-right: 15px;
+    margin-top: 13px;
+    background-color: rgb(28, 132, 198);
+    border-radius: 5px;
+    padding: 7px;
+    font-weight: 500;
+}
+
+.header > .header-numbers {
+    font-size: 35px;
+    font-weight: 300;
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.header-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.header-info > .header-info-describes {
+    font-size: 14px;
+    margin-left: 25px;
+    margin-right: 20px;
+};
