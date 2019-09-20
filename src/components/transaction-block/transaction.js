@@ -47,13 +47,7 @@ class TransactionBlockContainer extends Component {
     
     // in this place I will loading data with my service
     componentDidMount() {
-        const { dataLoaded,
-            dataRequested,
-            dataService} = this.props;
-
-            dataRequested();
-            dataService.getData()
-            .then((data) => dataLoaded(data));
+        this.props.fetchTransactionDetails();
     }
 
     render() {
