@@ -1,7 +1,7 @@
-const dataLoaded = (payload) => {
+const dataLoaded = (transactionData) => {
     return {
         type: 'DATA_LOADED',
-        action: payload
+        payload: transactionData
     };
 };
 const dataRequested = () => {

@@ -24,14 +24,9 @@
     font-weight: 500;
 }
 .header-type > .header-type-marks {
-    height: 20px;
-    color: #fff;
     margin-right: 15px;
     margin-top: 13px;
     background-color: rgb(28, 132, 198);
-    border-radius: 5px;
-    padding: 7px;
-    font-weight: 500;
 }
 
 .header > .header-numbers {

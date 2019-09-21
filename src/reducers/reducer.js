@@ -21,12 +21,3 @@ const reducer = (state, action) => {
     }
 };
 export default reducer;
-
-// export const fetchTransactionDetails = () => {
-//     return function(dispatch) {
-//         return dataService.getData()
-//             .then((data) => {
-//                 dispatch(dataLoaded(data));
-//             }
-//     }
-// }

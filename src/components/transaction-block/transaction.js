@@ -7,17 +7,23 @@ import Spinner from './../spinner/spinner';
 import { dataLoaded, dataRequested } from './../../actions/actions';
 import MapContainer from './../map/map';
 
-const TransactionBlock = ({data = {}}) => {
+const TransactionBlock = ({data = {}, loading}) => {
 
+    // make spinner when didn't have data 
+    if(loading){
+        return <Spinner className='trans-block' />;
+    }
+
+    // show data with Redux
     const transactionData = data.map((item) => {
-        console.log(data);
+
         const {id, transaction, date, amount} = item;
         return (
             <li className='trans-table' key={id}>
-                <span>{id}</span>
-                <span>{transaction}</span>
-                <span>{date}</span>
-                <span className='trans-amount'>{amount}</span>        
+                <span className='trans-table-item'>{id}</span>
+                <span className='trans-table-item'>{transaction}</span>
+                <span className='trans-table-item'>{date}</span>
+                <span className='trans-table-amount marks'>{amount}</span>        
             </li>
         )
     });
@@ -35,7 +41,7 @@ const TransactionBlock = ({data = {}}) => {
                 <ul>
                     { transactionData }
                 </ul>
-                <div className='trans-map'>
+                <div className='map-container'>
                     <MapContainer />
                 </div>
             </div>
@@ -46,20 +52,20 @@ const TransactionBlock = ({data = {}}) => {
 class TransactionBlockContainer extends Component {
     
     // in this place I will loading data with my service
-    // componentDidMount() {
-    //     this.props.fetchTransactionDetails();
-    // }
+    componentDidMount() {
+        const { dataLoaded,    
+                dataRequested,
+                dataService } = this.props;
+            dataRequested()
+            dataService.getData()
+            .then((data) => dataLoaded(data));
+    }
 
     render() {
         const { loading, transactionData } = this.props;
-        console.log(transactionData, loading);
 
-        // make spinner when didn't have data 
-        if(loading){
-            return <Spinner className='trans-block' />
-        }
         return (
-            <TransactionBlock data={transactionData}  />
+            <TransactionBlock loading={loading} data={transactionData}  />
         )
     }
 }
@@ -76,6 +82,7 @@ const mapDispatchToProps = {
     dataRequested
 }
 
+    // connect React + Redux
 export default compose(
     withService(),
     connect(mapStateToProps, mapDispatchToProps)

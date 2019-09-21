@@ -5,3 +5,10 @@ body {
 li {
     list-style-type: none;
 }
+.marks {
+    height: 15px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 7px;
+    font-weight: 500;
+}

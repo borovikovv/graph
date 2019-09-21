@@ -12,7 +12,7 @@ const Header = ({data}) => {
             <div key={id} className='header'>
                 <div className='header-type'>
                         <h3 className='header-type-h'>{text}</h3>
-                        <span className='header-type-marks'>{mark}</span>
+                        <span className='header-type-marks marks'>{mark}</span>
                 </div>
                 <span className='header-numbers'>{number}</span>
                 <div className='header-info'>
