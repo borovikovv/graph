@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import './order.css';
 import image from './graph1.jpg';
 
-// создаю функциональный компонент, чтобы в цикле деструктурировать объект
-//  с данными и отобразить все данные на экране
+// create functional component
 
 const Order = ({data}) => {
 
@@ -42,7 +41,7 @@ const Order = ({data}) => {
 
 class OrderContainer extends Component {
 
-    // делаю захардкодженный стейт с данными, которые потом выведу в UI
+    // create hard code data
 
     state = {
         dataGraph1: [
@@ -53,8 +52,6 @@ class OrderContainer extends Component {
     }
 
     render() {
-
-        // отрисовка компонента
         return (
             <div>
                 <Order data={this.state.dataGraph1} />

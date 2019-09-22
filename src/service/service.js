@@ -8,7 +8,7 @@ export default class Service {
         {id: 5, transaction: 'Phones', date: '01 jun 2014', amount: '235,00'},
         {id: 6, transaction: 'Monitors', date: '29 may 2014', amount: '100,00'}
     ]
-
+    //  this place I simulate request data with sarver
     getData() {
         return new Promise((resolve, reject) => {
             setTimeout(()=> {

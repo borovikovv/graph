@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './header.css';
 
-// создаю функциональный компонент, чтобы в цикле деструктурировать объект
-//  с данными и отобразить все данные на экране
+// create functional component 
 
 const Header = ({data}) => {
 
@@ -22,7 +21,6 @@ const Header = ({data}) => {
             </div>
         )
     });
-// отправляю все данные в классовый компонент
     return (
         <li className='header-element'>
             { element }
@@ -33,7 +31,7 @@ const Header = ({data}) => {
 
 class HeaderContainer extends Component {
 
-    // делаю захардкодженный стейт с данными, которые потом выведу в UI
+    // create hard code state
 
     state = {
         dataInfo: [
@@ -44,8 +42,7 @@ class HeaderContainer extends Component {
             ]
         };
 
-        // отрисовка компонента, передача данных в функциональный
-        // компонент
+        // render and show component
 
     render() {
         return (

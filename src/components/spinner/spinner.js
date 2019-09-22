@@ -1,6 +1,9 @@
 import React from 'react';
 import './spinner.css';
 
+
+// if data loaded this component will show
+
 const Spinner = () => {
     return(
     <div className="row justify-content-center lds-css">

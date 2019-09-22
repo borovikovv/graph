@@ -1,8 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import './message.css';
 
-// создаю функциональный компонент, чтобы в цикле деструктурировать объект
-//  с данными и отобразить все данные на экране
+// create functional componentfor visible UI
 
 const Message = ({data}) => {
 
@@ -19,7 +18,7 @@ const Message = ({data}) => {
             </li>
         )
     });
-// отправляю все данные в классовый компонент
+
     return (
         <Fragment>
             <h4 className='message-header'>Messages</h4>
@@ -39,7 +38,7 @@ const Message = ({data}) => {
 
 class MessageContainer extends Component {
 
-    // делаю захардкодженный стейт с данными, которые потом выведу в UI
+    // create hard code date state
 
     state = {
         messageData: [
@@ -67,9 +66,6 @@ class MessageContainer extends Component {
 
             ]
         };
-
-        // отрисовка компонента, передача данных в функциональный
-        // компонент
 
     render() {
         return (

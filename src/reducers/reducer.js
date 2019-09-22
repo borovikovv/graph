@@ -5,12 +5,15 @@ const reducer = (state, action) => {
             loading: false
         };
     }
+    // loaded data with redux store
     switch(action.type){
         case 'DATA_LOADED':
             return {
                 loading: false,
                 transactionData: action.payload
             };
+
+        // when component expect data show spinner
         case 'DATA_REQUESTED':
             return {
                 loading: true

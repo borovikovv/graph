@@ -11,7 +11,7 @@ const mapStyle = {
   height: '398px',
   left: '375px',
   top: '87px',
-  boxShadow: '5px 5px 5px 5px rgba(0,0,0,0.5)'
+  boxShadow: '0px -5px 5px -5px rgba(0,0,0,0.5)'
 };
 export class MapContainer extends Component {
   render() {
