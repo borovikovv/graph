@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
  
 // key in google map API
-// let apiKey = 'AIzaSyDD92CRply5iC537Ui_pAzTNVrZqNPuNmo';
+// let apiKey = '';
 
 const mapStyle = {
   display: 'inline-block',
@@ -30,5 +30,5 @@ export class MapContainer extends Component {
 }
  
 export default GoogleApiWrapper({
-  apiKey: ('AIzaSyDD92CRply5iC537Ui_pAzTNVrZqNPuNmo')
+  apiKey: ('')
 })(MapContainer)
